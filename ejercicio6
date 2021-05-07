@@ -1,0 +1,10 @@
+p=input("ingresa una palabra ")
+pa=p
+palrevez= p
+p= list(p)
+palrevez=list(palrevez)
+palrevez.reverse()
+if p==palrevez:
+    print("la palabra",pa, "es un palidromo")
+else:
+    print("la palabra",pa, "no es un palidromo")
