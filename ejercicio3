@@ -1,0 +1,26 @@
+#solucion propuesta
+subjects = ["Matemáticas", "Física", "Química", "Historia", "Lenguaje"]
+scores = []
+for subject in subjects:
+    score = input("¿Qué nota has sacado en " + subject + "?")
+    scores.append(score)
+for i in range(len(subjects)):
+    print("En " + subjects[i] + " has sacado " + scores[i])
+
+#solucion alternativa
+subjects= ["Matemáticas", "Física", "Química", "Historia", "Lenguaje"]
+Scores= []
+i=0
+while True:
+#ciclo que siempre esta activo amenos de que se le indique
+    score = input("¿Qué nota has sacado en " + subjects[i] + "?")
+    Scores.append(score)
+#se agrega la nota previamente escrita a la lista score
+    i= i + 1
+#es un contador, el cual cuenta cuantas veces se ejecuto el ciclo
+    if i == len(subjects):
+        break
+#cuando el contador iguala el numero de materias, este detiene el ciclo
+for j in range(len(subjects)):
+#ciclo que de termina la posicion de la lista subjects y score para luego imprimir la materia con su respectiva nota
+    print("En " + subjects[j] + " has sacado " + Scores[j])
