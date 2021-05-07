@@ -1,0 +1,9 @@
+#ejercicio localizar cuantas vocales hay en una palabra
+palabra = input("ingrese un ingrese una palabra ")
+a= palabra.count("a")
+e= palabra.count("e")
+i= palabra.count("i")
+o= palabra.count("o")
+u= palabra.count("u")
+vocales=a + e + i + o + u
+print("la palabra",palabra,"tiene",vocales,"vocales")
