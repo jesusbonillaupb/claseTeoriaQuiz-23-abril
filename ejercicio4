@@ -1,0 +1,28 @@
+datos = [4,5,9,10]
+for i in range(0, 4):
+#ciclo que imprime todos los valores de la lista separados por un espacio
+    print(datos[i], end=" ")
+print()
+
+datos[2]=-10
+#remplaza el valor de la posicion 2 de la lista por un -10 
+for i in range(0, len(datos)):
+    print(datos[i], end=" ")
+print()
+
+datos.insert(1, 11)
+#inserta en la posicion 1 el numero 11 sin remover el numero 5
+for i in range(0, len(datos)):
+    print(datos[i], end=" ")
+print()
+
+datos.remove(5)
+#elimina el numero 5 de la lista
+for i in range(0, len(datos)):
+    print(datos[i], end=" ")
+print()
+
+datos = datos + [21, 22]
+for i in range(0, len(datos)):
+    print(datos[i], end=" ")
+print()
